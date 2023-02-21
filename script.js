@@ -11,24 +11,45 @@ pwdElements = {
 
   pwdNumber: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  pwdCharacter: ["!", "@", "-", ".", "/", "#", ": ", "; ", "$", " % ", " & ", "\",  ", ",
-     "\", " < ", " > ","(", ")", " * ", " + ", "=", " ? ", "[", "]", " ^ ", "_",
-"`", "}", "|", "~"]
+  pwdCharacter: ["!", "@", "-", ".", "/", "#", ": ", "; ", "$", " % ", " & ", ", ",
+    " \ ", " < ", " > ", "(", ")", " * ", " + ", "=", " ? ", "[", "]", " ^ ", "_",
+    "`", "}", "|", "~"]
 
 
 }
+
+
+
+
+
 // Write password to the #password input
 function writePassword() {
 
-
-  var password = generatePassword();
-
-
-
+  var Pwd = generatePassword();
 
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  generateBtn.addEventListener("click", writePassword);
+  password.Elements = password;
+
+}
+
+var generatePassword();
+var upperCase;
+var lowerCase;
+var numbers;
+var characters;
+var passwordLength = 0;
+
+var passwordText = document.querySelector("#password");
+var (passwordLength < 8 + passwordLength > 128) {
+
+
+}
+
+
+
+passwordText.value = password;
 
 }
 
