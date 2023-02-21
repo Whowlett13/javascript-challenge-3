@@ -29,29 +29,35 @@ function writePassword() {
 
   var passwordText = document.querySelector("#password");
 
-  generateBtn.addEventListener("click", writePassword);
-  password.Elements = password;
+
+  passwordElements.Pwd = password;
 
 }
-
-var generatePassword();
-var upperCase;
-var lowerCase;
-var numbers;
-var characters;
-var passwordLength = 0;
-
-var passwordText = document.querySelector("#password");
-var (passwordLength < 8 + passwordLength > 128) {
-
-
-}
-
-
-
-passwordText.value = password;
-
-}
-
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+var generatePassword(); {
+
+  var result = "";
+
+
+
+  var upperCase;
+  var lowerCase;
+  var numbers;
+  var characters;
+  var passwordLength = 0;
+
+  var passwordText = document.querySelector("#password");
+  var (password.Length < 8 + passwordLength > 128) {
+
+
+  }
+
+
+
+  passwordText.value = password;
+
+
+
+  // Add event listener to generate button
+  generateBtn.addEventListener("click", writePassword);
