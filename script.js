@@ -11,8 +11,7 @@ pwdElements = {
 
   pwdNumber: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-  pwdCharacter: ["!", "@", "-", ".", "/", "#", ": ", "; ", "$", " % ", " & ", ", ",
-    " \ ", " < ", " > ", "(", ")", " * ", " + ", "=", " ? ", "[", "]", " ^ ", "_",
+  pwdCharacters: ["!", "@", "-", ".", "/", "#", ": ", "; ", "$", " % ", " & ", ", ", " < ", " > ", "(", ")", " * ", " + ", "=", " ? ", "[", "]", " ^ ", "_",
     "`", "}", "|", "~"]
 
 
@@ -25,32 +24,33 @@ pwdElements = {
 // Write password to the #password input
 function writePassword() {
 
-  var Pwd = generatePassword();
+  var password = generatePassword();
 
   var passwordText = document.querySelector("#password");
 
 
-  passwordElements.Pwd = password;
+  passwordText.value = password;
 
 }
 generateBtn.addEventListener("click", writePassword);
 
 var generatePassword(); {
 
-  var result = "";
+  result = "";
 
 
 
   var upperCase;
   var lowerCase;
-  var numbers;
   var characters;
+  var numbers;
   var passwordLength = 0;
 
-  var passwordText = document.querySelector("#password");
-  var (password.Length < 8 + passwordLength > 128) {
+  pwdCriteria.pwdLength = 0;
 
+  if (passwordLength < 8 || passwordLength > 128) {
 
+    var passwordText = document.querySelector("#password");
   }
 
 
@@ -61,3 +61,11 @@ var generatePassword(); {
 
   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
+}
+function Choice
+Prompts() {
+  pwdLowerCase = confirm("lower case letters?");
+  pwdUpperCase = confirm("pper case letters?");
+  pwdNumbers = confirm("numbers?");
+  pwdCharacters = confirm("special characters?");
+}
