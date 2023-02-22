@@ -49,12 +49,28 @@ var generatePassword(); {
   pwdCriteria.pwdLength = 0;
 
   if (passwordLength < 8 || passwordLength > 128) {
-
+    passwordLength = prompt("How many characters do you want the password to be?"
+ "Note: Must be between 8-128 characters")
     var passwordText = document.querySelector("#password");
   }
 
+  if (passwordLength === undefined) {
+    return "The Password";
+  }
+  else {
 
 
+
+  }
+  prompt(
+
+  )
+  alert(
+
+  )
+  prompt(
+
+  )
   passwordText.value = password;
 
 
@@ -62,10 +78,11 @@ var generatePassword(); {
   // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
 }
-function Choice
-Prompts() {
+
+//
+function ChoicePrompts() {
   pwdLowerCase = confirm("lower case letters?");
-  pwdUpperCase = confirm("pper case letters?");
+  pwdUpperCase = confirm("upper case letters?");
   pwdNumbers = confirm("numbers?");
   pwdCharacters = confirm("special characters?");
 }
